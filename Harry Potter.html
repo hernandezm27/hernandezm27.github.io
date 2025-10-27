@@ -1,0 +1,157 @@
+<!-- Michael Hernandez October 18, 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Harry Potter Quiz</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="HPstyles.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="images/hogwarts-crest.png" alt="Hogwarts Crest" class="crest" />
+      <h1>Harry Potter Quiz</h1>
+	  
+      <nav class="top-nav">
+        <a href="#intro">Intro</a>
+		
+        <a href="#quiz">Quiz</a>
+		
+        <a href="#gallery">Gallery</a>
+		
+        <a href="#newsletter">Newsletter</a>
+		
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    
+    <section id="intro" class="card intro-card">
+      <h2>Welcome, Witch or Wizard!</h2>
+      <p>Your Hogwarts letter may have been lost in the mail, but your magical knowledge is about to be tested.
+        This trivia quiz will challenge even the most avid fans of the Wizarding World. So, grab your wand,
+        recall your most cherished memories, and prepare to prove if you're a true master of magical lore.</p>
+
+
+      <div class="extra-info">
+        <button id="toggleExtra" class="btn small">Show / Hide Magical Tips</button>
+        <div id="extraContent" class="hidden card small-card">
+          <ul>
+            <li>Read each question carefully, as some include tricky wording.</li>
+            <li>No house points will be deducted for guessing!</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="content-grid">
+      
+      <section id="quiz" class="card quiz-card">
+        <h2>Quiz</h2>
+
+        <form id="quizForm">
+          <ol>
+            <li>
+              <p>What house does Harry Potter belong to?</p>
+              <label><input type="radio" name="q1" value="Gryffindor"> Gryffindor</label><br>
+              <label><input type="radio" name="q1" value="Slytherin"> Slytherin</label><br>
+              <label><input type="radio" name="q1" value="Hufflepuff"> Hufflepuff</label><br>
+            </li>
+
+            <li>
+              <p>Who is the current headmaster of Hogwarts?</p>
+              <label><input type="radio" name="q2" value="Snape"> Severus Snape</label><br>
+              <label><input type="radio" name="q2" value="Dumbledore"> Albus Dumbledore</label><br>
+              <label><input type="radio" name="q2" value="Voldemort"> Lord Voldemort</label><br>
+            </li>
+
+            <li>
+              <p>What is the name of Harry’s owl?</p>
+              <label><input type="radio" name="q3" value="Hedwig"> Hedwig</label><br>
+              <label><input type="radio" name="q3" value="Crookshanks"> Crookshanks</label><br>
+              <label><input type="radio" name="q3" value="Scabbers"> Scabbers</label><br>
+            </li>
+          </ol>
+
+          <div class="form-actions">
+            <button type="button" id="submitQuiz" class="btn">Submit</button>
+            <button type="button" id="resetQuiz" class="btn ghost">Reset</button>
+          </div>
+        </form>
+
+        <section id="results" class="hidden result-card">
+          <h3>Results</h3>
+          <p id="score"></p>
+          <p id="message"></p>
+        </section>
+      </section>
+
+      
+	  
+      <aside class="card sidebar">
+        <h3>Gallery</h3>
+        <div id="gallery" class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="images/hedwig.jpg" alt="Hedwig the snowy owl" class="gallery-img">
+            <figcaption>Hedwig</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/gryffindor.jpg" alt="Gryffindor common room" class="gallery-img">
+            <figcaption>Gryffindor</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/wand.jpg" alt="Wooden wand with sparks" class="gallery-img">
+            <figcaption>Wands</figcaption>
+          </figure>
+        </div>
+
+        <hr>
+
+
+        <h3>Top Spells (Fan Rankings)</h3>
+        <table id="spellsTable" class="spells-table">
+          <thead>
+            <tr><th>Rank</th><th>Spell</th><th>Usage</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <button id="revealSpellBtn" class="btn small">Reveal More Spells</button>
+        <div id="moreSpells" class="hidden card small-card">
+          <p>Accio! Expect a charm to call objects to you.</p>
+          <p>Lumos! Light your wand tip in the darkness.</p>
+        </div>
+      </aside>
+    </section>
+
+
+
+    <section id="newsletter" class="card newsletter-card">
+      <h2>Join the Hogwarts Newsletter</h2>
+      <form id="signupForm">
+        <label>Name: <input type="text" id="name" placeholder="Enter your name"></label><br>
+        <label>Email: <input type="email" id="email" placeholder="Enter your email"></label><br>
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <p>© 2025 Hogwarts Quiz by Michael Hernandez.</p>
+    <button id="backToTop" class="btn small">Back to Top</button>
+  </footer>
+
+
+
+  <script src="HPjava.js"></script>
+</body>
+</html>

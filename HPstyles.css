@@ -1,0 +1,257 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f2f2f2 url("images/hogwarts-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  color: #222;
+}
+
+
+/* Header */
+.site-header {
+  background: rgba(30, 30, 60, 0.9);
+  color: #f5f5f5;
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.crest {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.top-nav a {
+  color: #f5f5f5;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.top-nav a:hover {
+  color: gold;
+}
+
+
+/* Shared Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  max-width: 900px;
+}
+ 
+ 
+.small-card {
+  padding: 15px;
+  margin-top: 10px;
+}
+
+
+/* Buttons */
+.btn {
+  background: #4b2e83;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: gold;
+  color: #222;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 2px solid #4b2e83;
+  color: #4b2e83;
+}
+
+.btn.small {
+  padding: 6px 10px;
+  font-size: 0.9em;
+}
+
+
+/* Intro Section */
+.intro-card {
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.intro-card h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2em;
+  color: #4b2e83;
+  margin-bottom: 15px;
+}
+
+.intro-card p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.extra-info {
+  margin-top: 15px;
+}
+
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.quiz-card {
+  grid-column: 1;
+}
+
+.sidebar {
+  grid-column: 2;
+}
+
+
+/*Quiz Form*/
+form ol {
+  padding-left: 20px;
+}
+
+form li {
+  margin-bottom: 20px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+.result-card {
+  margin-top: 20px;
+  background: rgba(255, 255, 240, 0.9);
+  text-align: center;
+}
+
+
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.caption {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+
+/* Spells Table */
+.spells-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.spells-table th,
+.spells-table td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: left;
+}
+
+
+.spells-table th {
+  background-color: #4b2e83;
+  color: white;
+}
+
+
+/* Newsletter */
+#newsletter {
+  margin-top: 40px;
+}
+
+
+.newsletter-card {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+#signupForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#signupForm input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  font-size: 1em;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background: rgba(30, 30, 60, 0.9);
+  color: #f5f5f5;
+  margin-top: 40px;
+}
